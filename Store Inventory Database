@@ -1,0 +1,28 @@
+CREATE TABLE store_inventory (
+id INTEGER PRIMARY KEY,
+name TEXT, 
+price INTEGER,
+quantity INTEGER,
+classification TEXT);
+
+INSERT INTO store_inventory VALUES
+(1, "Mountain Bicycle", 800, 7, "Appliances"),
+(2, "Playstation 5", 500, 5, "Electronics"),
+(3, "Standing Desk", 300, 10, "Furniture"),
+(4, "HP Spectre Laptop", 1000, 4, "Electronics"),
+(5, "California King-Sized Bed", 1200, 3, "Furniture"),
+(6, "Rice Cooker", 150, 10, "Electronics"),
+(7, "MacBook Pro Laptop", 1200, 2, "Electronics"),
+(8, "Gaming Chair", 300, 8, "Furniture"),
+(9, "Desk Lamp", 100, 7, "Appliances"),
+(10, "Security Cameras", 400, 7, "Appliances"),
+(11, "Smart Watch", 250, 4, "Electronics"),
+(12, "4K TV", 950, 5, "Electronics"),
+(13, "Home Gym Set", 800, 6, "Appliances"),
+(14, "iPhone 13 Pro", 900, 10, "Electronics"),
+(15, "Handheld Camera", 700, 8, "Appliances");
+
+SELECT * FROM store_inventory ORDER BY price ASC;
+
+SELECT MAX(price) AS most_expensive_item FROM store_inventory;
+SELECT AVG(price) AS average_price_of_items FROM store_inventory;
