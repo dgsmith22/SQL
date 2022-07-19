@@ -1,0 +1,72 @@
+/* Create table about the people and what they do here */
+CREATE TABLE marvels (ID INTEGER PRIMARY KEY,
+    name TEXT,
+	nickname TEXT,
+    popularity INTEGER,
+    alignment TEXT,
+    gender TEXT, 
+    height_m NUMERIC,
+    weight_kg NUMERIC,
+    hometown TEXT,
+    intelligence INTEGER,
+    strength INTEGER,
+    speed INTEGER,
+    durability INTEGER,
+    energy_Projection INTEGER,
+    fighting_Skills INTEGER);
+    
+INSERT INTO marvels VALUES(1, "Peter Parker", "Spider Man", 1, "Good", "Male", 1.78, 75.75, "USA", 4, 4, 3, 3, 1, 4); 
+INSERT INTO marvels VALUES(2, "Anthony Edward Stark", "Iron Man", 20, "Neutral", "Male", 1.98, 102.58, "USA", 6, 6, 5, 6, 6, 4); 
+INSERT INTO marvels VALUES(3, "Robert Bruce Banner", "Hulk", 18, "Neutral", "Male", 2.44, 635.29, "USA", 6, 7, 3, 7, 5, 4); 
+INSERT INTO marvels VALUES(4, "James Howlett", "Wolverine", 3, "Good", "Male", 1.6, 88.46, "Canada", 2, 4, 2, 4, 1, 7);
+INSERT INTO marvels VALUES(5, "Thor Odinson", "Thor", 5, "Good", "Male", 1.98, 290.3, "Norway", 2, 7, 7, 6, 6, 4);
+INSERT INTO marvels VALUES(6, "Norman Virgil Osborn", "Green Goblin", 91, "Bad", "Male", 1.93, 174.63, "USA", 4, 4, 3, 4, 3, 3);
+INSERT INTO marvels VALUES(7, "Max Eisenhardt", "Magneto", 11, "Neutral", "Male", 1.88, 86.18, "Germany", 6, 3, 5, 4, 6, 4);
+INSERT INTO marvels VALUES(8, "Thanos", "Thanos", 47, "Bad", "Male", 2.01, 446.79, "Titan", 6, 7, 7, 6, 6, 4);
+INSERT INTO marvels VALUES(9, "Loki Laufeyson", "Loki", 32, "Bad", "Male", 1.93, 238.14, "Jotunheim", 5, 5, 7, 6, 6, 3);
+INSERT INTO marvels VALUES(10, "Victor von Doom", "Doctor Doom", 19, "Bad", "Male", 2.01, 188.24, "Latveria", 6, 4, 5, 6, 6, 4);
+INSERT INTO marvels VALUES(11, "Jean Grey", "Phoenix",  8, "Good", "Female", 1.68, 52.16, "USA", 3, 2, 7, 7, 7, 4);
+INSERT INTO marvels VALUES(12, "Anna Marie", "Rogue", 4, "Good", "Female", 1.73, 54.43, "USA", 7, 7, 7, 7, 7, 7);
+INSERT INTO Marvels VALUES(13, "Ororo Munroe", "Storm", 2, "Good", "Female", 1.80, 66, "Kenya", 2, 2, 3, 2, 5, 4);
+INSERT INTO Marvels VALUES(14, "Kurt Wagner", "Nightcrawler", 6, "Good", "Male", 1.75, 73, "Germany", 3, 2, 7, 2, 1, 3);
+INSERT INTO Marvels VALUES(15, "Remy Etienne LeBeau", "Gambit", 7, "Good", "Male", 1.88, 81, "EUA", 2, 2, 2, 2, 2, 4);
+INSERT INTO Marvels VALUES(16, "Steven Grant Rogers","Captain America", 9, "Good", "Male", 1.88, 108, "EUA", 3, 3, 2, 3, 1, 6);
+INSERT INTO Marvels VALUES(17, "Scott Summers", "Cyclops", 10, "Good", "Male", 1.90, 88, "EUA", 3, 2, 2, 2, 5, 4);
+INSERT INTO Marvels VALUES(18, "Emma Grace Frost", "White Queen", 12, "Neutral", "Female", 1.78, 65, "EUA", 4, 4, 2, 5, 5, 3);
+INSERT INTO Marvels VALUES(19, "Shadowcat", "Katherine Anne Pryde", 13, "Good", "Female", 1.68, 50, "EUA", 4, 2, 2, 3, 1, 5);
+INSERT INTO Marvels VALUES(20, "Matthew Michael Murdock", "Daredevil", 14, "Good", "Male", 1.83, 91, "EUA", 3, 3, 2, 2, 4, 5);
+INSERT INTO Marvels VALUES(21, "Frank Castle", "Punisher", 50, "Neutral", "Male", 1.85, 91, "EUA", 3, 3, 2, 2, 1, 6);
+INSERT INTO Marvels VALUES(22, "Norrin Radd", "Silver Surfer", 33, "Good", "Male", 1.93, 102, "Zenn-La", 3, 7, 7, 6, 7, 2);
+INSERT INTO Marvels VALUES(23, "Johnathon Blaze", "Ghost Rider", 86, "Good", "Male", 1.88, 99, "EUA", 2, 4, 3, 5, 4, 2);
+INSERT INTO Marvels VALUES(24, "Edward Charles Brock", "Venom", 78, "Neutral", "Male", 1.90, 118, "EUA", 3, 4, 2, 6, 1, 4);
+INSERT INTO Marvels VALUES(25, "Cain Marko", "Juggernaut", 76, "Neutral", "Male", 2.87, 862, "EUA", 2, 7, 2, 7, 1, 4);
+INSERT INTO Marvels VALUES(26, "Charles Francis Xavier", "Professor X", 58, "Good", "Male", 1.83, 86, "EUA", 5, 2, 2, 2, 5, 3);
+
+CREATE TABLE movies (ID INTEGER PRIMARY KEY, 
+		title TEXT,
+		year INTEGER,
+		id_marvels INTEGER);
+INSERT INTO movies VALUES(1, "Spider-Man", 2002, 1);
+INSERT INTO movies VALUES(2, "Spider-Man", 2002, 6);
+INSERT INTO movies VALUES(3, "Daredevil", 2003, 20);
+INSERT INTO movies VALUES(4, "X-Men", 2000, 4);
+INSERT INTO movies VALUES(5, "X-Men", 2000, 7);
+INSERT INTO movies VALUES(6, "X-Men", 2000, 12);
+INSERT INTO movies VALUES(7, "X-Men", 2000, 13);
+INSERT INTO movies VALUES(8, "X-Men", 2000, 17);
+INSERT INTO movies VALUES(9, "X-Men", 2000, 26);
+INSERT INTO movies VALUES(10, "Fantastic Four", 2005, 10);
+INSERT INTO movies VALUES(11, "Spider-Man 3", 2002, 1);
+INSERT INTO movies VALUES(12, "Spider-Man 3", 2002, 6);
+INSERT INTO movies VALUES(13, "Spider-Man 3", 2002, 24);
+INSERT INTO movies VALUES(14, "Fantastic Four 2", 2007, 22);
+INSERT INTO movies VALUES(15, "Ghost Rider", 2007, 23);
+INSERT INTO movies VALUES(16, "Marvel's The Avengers", 2012, 2);
+INSERT INTO movies VALUES(17, "Marvel's The Avengers", 2012, 3);
+INSERT INTO movies VALUES(18, "Marvel's The Avengers", 2012, 5);
+INSERT INTO movies VALUES(19, "Marvel's The Avengers", 2012, 9);
+INSERT INTO movies VALUES(20, "Marvel's The Avengers", 2012, 16);
+
+SELECT marvels.nickname, movies.title, movies.year FROM marvels 
+    JOIN movies 
+    ON marvels.id = movies.id_marvels;
