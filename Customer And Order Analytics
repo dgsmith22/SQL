@@ -1,3 +1,5 @@
+-- This SQL showcases the use of common DML queries in order to quantify statistical insights about customer and order data from a database with multiple tables.
+
 -- 1. How many orders were placed in January?
 
 SELECT count(orderID) AS Number_Of_Orders 
